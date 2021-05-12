@@ -20,7 +20,6 @@ According to assignment in 3 that you implemented what is the maximum sum of bel
 
 
 
-
 using System;
 using System.Text.RegularExpressions;
 using System.Linq;
@@ -30,7 +29,7 @@ namespace CalculateMaxPathSum
 {
     public static class Program
     {
-        private const string input = @" 215
+        private const string input = @"  215
                                          193 124
                                          117 237 442
                                          218 935 347 235
@@ -55,7 +54,7 @@ namespace CalculateMaxPathSum
             if (maxSum2 == 0 || maxSum2 == -1)
                 Console.WriteLine("There is no possible path");
 
-            Console.WriteLine("Enter the file path: (Ex: " + @"D:\input.txt" + ")");
+            Console.WriteLine( @"C:\Documents\input.txt");
             string cs = Console.ReadLine();
             string contents = File.ReadAllText(cs);             //read from file
 
